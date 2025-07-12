@@ -1,0 +1,36 @@
+@use '../abstracts/variables' as v;
+.main-header {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-logo img{
+        width: 180px;
+    }
+    &-nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        margin-right: 80px;
+        a {
+            color: v.$white;
+            opacity: 0.5;
+        }
+        a.active, a:hover {
+            color: v.$white;
+            opacity: 1;
+            position: relative;
+            &::before {
+                display: inline-block;
+                content: "";
+                width: 20px;
+                height: 2px;
+                background-color: v.$pink;
+                position: absolute;
+                top: 120%;
+            }
+        }
+    }
+}

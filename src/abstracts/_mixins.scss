@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 @mixin breakpoint($bp) {
   @if $bp == tablet {
     @media (min-width: $bp-tablet) {
@@ -18,5 +20,16 @@
     @media (min-width: $bp-desktop-xk) {
       @content;
     }
+  }
+}
+
+@mixin button() {
+  padding: 10px 40px;
+  background-color: v.$pink;
+  color: v.$white;
+  border-radius: 8px 8px 8px 0;
+  &:hover {
+    background-color: v.$white;
+    color: v.$pink;
   }
 }

@@ -1,0 +1,130 @@
+@use '../abstracts/variables' as v;
+
+.hero {
+    .container {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &-content {
+        width: 46%;
+        &-principal {
+            margin-bottom: 90px;
+          
+            h1 {
+                color: v.$white;
+                font-family: v.$title-font;
+                font-size: v.$font-title;
+                margin-bottom: 20px;
+                padding-top: 40px;
+                font-weight: 600;
+            }
+            p {
+                color: v.$white;
+                opacity: 0.5;
+                font-size: v.$font-subtitle;
+                width: 83%;
+                margin-bottom: 30px;
+                font-weight: 400;
+            }
+            .cta {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                .link {
+                    color: v.$white;
+                    text-decoration: underline;
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                    &::after {
+                        content: '';
+                        background-image: url(../../img/arrow-icon.svg);
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;                      
+                    }
+                    &:hover {
+                        color: v.$pink;
+                    }   
+                }
+            }
+        }
+        &-services {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            div {
+               display: flex;
+               gap: 10px;
+               align-items: center;
+               img {
+                width: 50px;
+                padding: 8px;
+                background-color: rgba(v.$white, 0.25);
+                border-radius: 10px;
+               }
+               p {
+                display: inline-block;
+                color: v.$white;
+                width: 50%;
+               }
+               
+            }
+        }
+    }
+    
+    &-image {
+        display: grid;
+        grid-template-columns: repeat(3, 180px);
+        grid-template-rows: repeat(3, 180px);
+        gap: 20px;
+        position: relative;
+        div {
+            clip-path: inset(0 round 65px);
+            
+            
+        }
+        img {
+            width: 200px;
+            object-fit: contain;       
+
+        }
+        .man1 {
+            grid-row: 1/span 2;
+            grid-column: 1;
+            background-color: v.$purple;
+            bottom: -20%;
+        }
+        .woman1 {
+            grid-row: 1;
+            grid-column: 2;
+            background-color: v.$turquese;
+        }
+        .woman2 {
+            grid-row: 3;
+            grid-column: 1;
+            background-color: v.$pink;
+        }
+        .man2 {
+            grid-row: 2/span 2;
+            grid-column: 2;
+            background-color: v.$orange;
+        }
+        .woman3 {
+            grid-column:3;
+            grid-row: 2 / span 2;
+            background-color: v.$yellow;
+            position: absolute;
+            top: -100px;
+            height: 420px;
+            
+
+        }
+    }
+}

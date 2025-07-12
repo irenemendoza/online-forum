@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as v;
+
+body {
+    max-height: 100vh;
+    overflow-y: hidden;
+    background-color: v.$black;
+    background-image: url(../../img/small-ellipse.svg), url(../../img/big-ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: right 0% bottom -40%, right 0% bottom -130%;
+    background-size: 36%, 48%;
+}

@@ -4,12 +4,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Base Vite Project Sass</title>
+  <title>Header design example for an Online Forum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
-  <h1>
-    Esto es una prueba!</h1>
+  <header class="main-header">
+    <div class="container">
+      <div class="main-header-logo">
+        <a href="#">
+          <img src="img/GathSession.-logo.svg" alt="Gath Session logo">
+        </a>
+      </div>
+      <nav class="main-header-nav">
+        <ul>
+          <li>
+            <a href="#" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="hero">
+    <div class="container">
+      <section class="hero-content">
+        <div class="hero-content-principal">
+          <h1>Build your best community starting from here.</h1>
+          <p>Meet and communicate with the best people to run projects, events or other activities in a more effective
+            and fun way</p>
+          <div class="cta">
+            <a href="#" class="button">Get Started</a>
+            <a href="#" class="link">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-content-services">
+          <div class="item1">
+            <img src="img/com-icon.svg" alt="icon">
+            <p>Build Community</p>
+          </div>
+          <div class="item2">
+            <img src="img/event-icon.svg" alt="icon">
+            <p>Share Events</p>
+          </div>
+          <div class="item3">
+            <img src="img/inform-icon.svg" alt="icon">
+            <p>Get Information</p>
+          </div>
+        </div>
+      </section>
+      <section class="hero-image">
+        <div  class="man1">
+          <img src="img/man1.png" alt="pic">
+        </div>
+        <div  class="woman1">
+          <img src="img/woman1.png" alt="pic">
+        </div>
+        <div class="woman2">
+          <img src="img/woman2.png" alt="pic" >
+        </div>
+        <div class="man2">
+          <img src="img/man2.png" alt="pic">
+        </div>
+        <div class="woman3">
+          <img src="img/woman3.png" alt="pic">
+        </div>
+      </section>
+    </div>
+  </main>
   <script type="module" src="/main.js"></script>
 </body>
 
