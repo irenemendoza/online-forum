@@ -1,11 +1,15 @@
 @use '../abstracts/variables' as v;
 
 body {
-    max-height: 100vh;
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: 0 auto;
     overflow-y: hidden;
     background-color: v.$black;
     background-image: url(/small-ellipse.svg), url(/big-ellipse.svg);
     background-repeat: no-repeat;
-    background-position: right 0% bottom -50%, right 0% bottom -255%;
-    background-size: 36%, 48%;
+    background-position: right -1vw bottom -1vh, right -3vw bottom -2vh;
+    background-size: 38.17vw, 53vw;
 }
+
+

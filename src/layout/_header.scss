@@ -4,6 +4,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 3.43vh 8.33vw;
     }
     &-logo img{
         width: 180px;
@@ -18,7 +19,7 @@
             color: v.$white;
             opacity: 0.5;
         }
-        a.active, a:hover {
+        a:hover {
             color: v.$white;
             opacity: 1;
             position: relative;
