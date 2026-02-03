@@ -26,6 +26,6 @@ npm run dev
 
 # Base Vite Project - Sass
 
-🔗 [Live Demo]
+🔗 [Live Demo] https://irenemendoza.github.io/online-forum/
 
 A practice project for layout structure using HTML, SCSS, and Vite.
