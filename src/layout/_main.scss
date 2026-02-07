@@ -51,7 +51,10 @@
                     }
                     &:hover {
                         color: v.$pink;
-                    }   
+                    }
+                    &:hover svg {
+                        fill: v.$pink; 
+                    }
                 }
             }
         }
